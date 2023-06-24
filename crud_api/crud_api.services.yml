@@ -1,0 +1,3 @@
+services:
+  crud_api.CrudApi:
+    class: Drupal\crud_api\Service\CrudApi

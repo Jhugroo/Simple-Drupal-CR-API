@@ -1,0 +1,19 @@
+crud_api.fetch_data:
+  path: "/api/v1/fetch-data"
+  defaults:
+    _controller: '\Drupal\crud_api\Controller\CrudApiController::fetchData'
+  methods: [POST]
+  requirements:
+    _permission: "access crud webservice"
+  options:
+    _auth: ['oauth2']
+
+crud_api.create_node:
+  path: "/api/v1/create-node"
+  defaults:
+    _controller: '\Drupal\crud_api\Controller\CrudApiController::createNode'
+  methods: [POST]
+  requirements:
+    _permission: "access crud webservice"
+  options:
+    _auth: ['oauth2']

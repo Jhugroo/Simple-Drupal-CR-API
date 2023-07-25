@@ -44,6 +44,7 @@ const onSubmit = (data) => {
 return (
   <Page>
     <form onSubmit={handleSubmit(onSubmit)}>
+      <Input type="hidden" placeholder="type" value="currency" {...register("type")} />
       <Input type="text" label="title" placeholder="title" {...register("title")} />
       <Input type="text" label="input" placeholder="input" {...register("description")} inputStyle="box" labelStyle="floating" />
     </form>
